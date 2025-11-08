@@ -20,7 +20,7 @@ This project aims to:
 
 ## 🧠 Features
 
-The dataset contains more than **47,000 labeled tweets**, with each entry classified into one of six categories:
+The dataset contains the following features:
 
 | Feature Name        | Description                                                   | Type        |
 |---------------------|---------------------------------------------------------------|-------------|
