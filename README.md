@@ -67,8 +67,8 @@ This project follows a typical machine learning workflow:
    - Visualized correlations between features and the target.
 
 4. Model Training
-   - Tried multiple regression models: SVM, Random Forest, LightGBM, CatBoost, and XGBoost.
-   - Implemented deep learning models: LSTM + GRU and Transformer-based (BERT).
+   - Tried multiple classification models: SVM, Random Forest, LightGBM, CatBoost, and XGBoost.
+   <!-- - Implemented deep learning models: LSTM + GRU and Transformer-based (BERT). -->
 
 5. Model Evaluation
    - Evaluated models using Weighted F1 Score, appropriate for imbalanced class distributions.
@@ -97,14 +97,13 @@ The summarized results are shown below:
 | Model                    | Weighted F1 Score |
 |------------------------|------------------|
 | Random Forest             | 76.95           |
-| CatBoost                  | 80.61           |
+| **CatBoost**              | **80.61**           |
 | XGBoost                   | 79.99           |
 | LightGBM                  | 80.36           |
 | SVM                       | 53.52           |
-| LSTM + GRU                |             |
-| **BERT ()**    |             |
 
-The **Transformer-based model** achieved the **highest Weighted F1 Score**, demonstrating superior ability to capture semantic and contextual cues in text.  
+
+The **CatBoost** achieved the **highest Weighted F1 Score**, indicating its ability to effectively handle imbalanced data and capture complex patterns in the text data.
 Therefore, it was selected as the **final model** for inference.
 
 ---
@@ -127,8 +126,8 @@ To run this project on your local machine, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/abidalfrz/cyberbullying-classification-multiliingual-nlp.git
-cd cyberbullying-classification-multiliingual-nlp
+git clone https://github.com/abidalfrz/cyberbullying-classification-multilingual-nlp.git
+cd cyberbullying-classification-multilingual-nlp
 ```
 
 ### 2. Create and Activate a Virtual Environment (Optional but Recommended)
