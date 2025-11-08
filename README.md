@@ -73,7 +73,7 @@ This project follows a typical machine learning workflow:
 5. Model Evaluation
    - Evaluated models using Weighted F1 Score, appropriate for imbalanced class distributions.
    - Created confusion matrix and detailed classification reports.
-   - Best-performing model: ****.
+   - Best-performing model: **BERT (bert-base-multilingual-cased)**.
 
 ## 🔤 Text Embedding
 
@@ -97,13 +97,14 @@ The summarized results are shown below:
 | Model                    | Weighted F1 Score |
 |------------------------|------------------|
 | Random Forest             | 76.95           |
-| **CatBoost**              | **80.61**           |
+| CatBoost              | 80.61          |
 | XGBoost                   | 79.99           |
 | LightGBM                  | 80.36           |
 | SVM                       | 53.52           |
+| **BERT (bert-base-multilingual-case)**    | **83.97**            |
 
 
-The **CatBoost** achieved the **highest Weighted F1 Score**, indicating its ability to effectively handle imbalanced data and capture complex patterns in the text data.
+The **BERT (bert-base-multilingual-cased)** model outperformed all other models, indicating its ability to capture the nuances of language in tweets across multiple languages and contexts.
 Therefore, it was selected as the **final model** for inference.
 
 ---
