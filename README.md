@@ -88,19 +88,6 @@ This project follows a typical machine learning workflow:
    - Created confusion matrix and detailed classification reports.
    - Best-performing model: **BERT (bert-base-multilingual-cased)**.
 
-## 🔤 Text Embedding
-
-To convert the tweet text into numerical representations suitable for machine learning models (not included transformer model), this project uses **Sentence Transformer embeddings**.  
-We specifically utilize the multilingual model:
-
-```
-paraphrase-multilingual-mpnet-base-v2
-```
-This model was selected because:
-- It supports multiple languages, making it suitable for diverse Twitter content.
-- It captures semantic meaning, not just word-level patterns.
-- It is optimized for sentence-level similarity, allowing tweets with similar intent or tone to be represented closely in vector space.
-
 ## 📈 Model Performance
 
 Several classification models were evaluated to categorize user statements into one of the seven mental health status labels.  
@@ -109,12 +96,12 @@ The summarized results are shown below:
 
 | Model                    | Weighted F1 Score |
 |------------------------|------------------|
-| Random Forest             | 76.95           |
+| **BERT (bert-base-multilingual-case)**    | **83.97**            |
+| LightGBM                  | 80.36           |
 | CatBoost              | 80.61          |
 | XGBoost                   | 79.99           |
-| LightGBM                  | 80.36           |
+| Random Forest             | 76.95           |
 | SVM                       | 53.52           |
-| **BERT (bert-base-multilingual-case)**    | **83.97**            |
 
 
 The **BERT (bert-base-multilingual-cased)** model outperformed all other models, indicating its ability to capture the nuances of language in tweets across multiple languages and contexts.
